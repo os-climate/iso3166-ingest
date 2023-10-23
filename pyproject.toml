@@ -31,7 +31,7 @@ classifiers = [
 ]
 dependencies = [
   "jupyterlab==4.0.4",
-  "osc-ingest-tools>=0.5.1",
+  "osc-ingest-tools>=0.5.2",
   "pycountry",
   "pandas",
   "numpy",
