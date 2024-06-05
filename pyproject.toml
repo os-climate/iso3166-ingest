@@ -35,6 +35,8 @@ dependencies = [
   "pycountry",
   "pandas",
   "numpy",
+  "click",
+  "python-dotenv>=0.5.1"
 ]
 
 [project.urls]
@@ -79,3 +81,6 @@ testpaths = [ "test/" ]
 
 [tool.black]
 line-length = 120
+
+[tool.mypy]
+ignore_missing_imports = true
