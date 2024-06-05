@@ -12,6 +12,7 @@ exclude: |
   )$
 
 repos:
+
   - repo: local
     hooks:
       - id: tomllint
@@ -53,7 +54,8 @@ repos:
     rev: v4.0.0-alpha.8
     hooks:
       - id: prettier
-        args: ["--no-error-on-unmatched-pattern", "--ignore-unknown"]
+        args:
+          ['--no-error-on-unmatched-pattern', '--ignore-unknown']
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.41.0
@@ -93,17 +95,13 @@ repos:
     hooks:
       - id: flake8
         additional_dependencies:
-          - pep8-naming
+        - pep8-naming
 
   - repo: https://github.com/adrienverge/yamllint.git
     rev: v1.35.1
     hooks:
       - id: yamllint
-        args:
-          [
-            "-d",
-            "{rules: {line-length: {max: 120}}, ignore-from-file: [.gitignore],}",
-          ]
+        args: [ "-d", "{rules: {line-length: {max: 120}}, ignore-from-file: [.gitignore],}", ]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.4.5
