@@ -1,4 +1,4 @@
-# project-template
+# iso3166-ingest
 
 template for the team to use
 
@@ -69,3 +69,5 @@ template for the team to use
     └── tox.ini                                 <- tox file with settings for running tox; see tox.readthedocs.io
 
 ---
+
+Project based on the [cookiecutter](https://drivendata.github.io/cookiecutter-data-science/) data science project template
